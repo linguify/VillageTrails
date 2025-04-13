@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="index.css">
+  <title>VillageTrails</title>
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+        <h1 class="logo">Village Trails</h1>
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="../index.html" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="../contactUS.html" class="navbar-link">Contact Us</a>
+          </li>
+          <button id="signinnav">    
+            <a href="../signup.html" class="navbar-link">   Sign Up/ Login    <i class="fa-solid fa-user fa-beat"></i></a>
+          </button>
+        </ul>
+        <!-- <div class = "BS"><a href="../booking.html" class="btn btn-secondary">Booking Now</a></div> -->
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="host">
+      <h2 id="currlisth2" class="currlisthead">Current Listings</h2>
+      <div class="container1">
+        <div id="currlist" class="current-listings">
+            <img style="margin-left: 1rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmZCg0vN32y9cggbRq_Ed1AaaWgXd4SnBTIg&usqp=CAU">
+            <div class="listing-details">
+              <p id="listname" class="name">Nick's Palace</p>
+              <p id="listdesc" class="description">2 bedroom house with own farm and outdoor kitchen</p>
+              <p id="listprice" class="location">₹1200</p>
+              <p id="liststate" class="location">Thekkady,Kerala</p>
+              <div class="btn-group">
+                <a href="../listingstore.html" class="btn btn-outline">Edit</a>
+                <a href="#" class="btn btn-primary">Delete</a>
+              </div>
+
+            </div>
+        </div>
+        <div class="profile-card">
+          <h2 style="margin-top: 1rem; margin-left: 1rem;">Your Profile</h2>
+          <div class="profile-detail-container">
+            <img id="profile-avatar" src="assets/images/avatar.png">
+            <div class="profile-details">
+              <p id="hostname" class="name"></p>
+              <p id="hostphone" class="phone"></p>
+              <p id="user-type" class="user-type"></p>
+            </div>
+          </div>
+          <img id="edit-profile-icon" src="assets/images/editicon.png">
+          <img id="logout-icon" src="assets/images/logouticon.png">
+        </div>
+      </div>
+    </section>
+    <section class="past-listing">
+      <h2 class="currlisthead">Past Listings</h2>
+      <div style="display: none;" class="grid-container">
+        
+        <div class="user-profile">
+          <div class="profile-header">
+            <h2>Name</h2>
+          </div>
+          <div class="profile-body">
+            <div class="profile-date">
+              <span>Date:</span>
+              <span>April 24, 2023</span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="user-profile">
+          <div class="profile-header">
+            <h2>Name</h2>
+          </div>
+          <div class="profile-body">
+            <div class="profile-date">
+              <span>Date:</span>
+              <span>April 24, 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="user-profile">
+          <div class="profile-header">
+            <h2>Name</h2>
+          </div>
+          <div class="profile-body">
+            <div class="profile-date">
+              <span>Date:</span>
+              <span>April 24, 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="user-profile">
+          <div class="profile-header">
+            <h2>Name</h2>
+          </div>
+          <div class="profile-body">
+            <div class="profile-date">
+              <span>Date:</span>
+              <span>April 24, 2023</span>
+            </div>
+          </div>
+        </div>
+            
+      </div>
+      <div style="display: flex; position: absolute; align-items: center;margin-top:2rem;margin-left: 3rem; padding: 5px; border:2px solid black; height: 30px; width:5ppxx; justify-content: center; margin-left: 20px; background-color:hsl(222, 46%, 17%); color:white "><a href = "../listingstore.html" style="color:
+      white; text-decoration: none; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Create Listing </a> </div>
+      
+    </section>
+  </main>
+</body>
+<script src="main.js"></script>
+
+<!-- <ul>
+  <li>
+    <img src="https://karnatakatourism.org/wp-content/uploads/2020/10/hampi-8.jpg" alt="Place Image">
+    <h2>Hampi Karnataka</h2>
+    <p>Description of the place goes here.</p>
+  </li>
+  <li>
+    <img src="place-image.jpg" alt="Place Image">
+    <h2>Place Name</h2>
+    <p>Hampi is a UNESCO World Heritage Site located in the state of Karnataka, India. It was once the capital of the Vijayanagara Empire and is now known for its numerous ancient temples, ruins, and monuments. The city is situated on the banks of the Tungabhadra River and is surrounded by a landscape of rugged granite boulders and hills. Hampi is a popular tourist destination and attracts visitors from all over the world who come to explore its rich history and architectural wonders. Some of the popular attractions in Hampi include the Virupaksha Temple, Vittala Temple, Lotus Mahal, and the Hampi Bazaar.</p>
+  </li>
+  <li>
+    <img src="place-image.jpg" alt="Place Image">
+    <h2>Place Name</h2>
+    <p>Description of the place goes here.</p>
+  </li>
+</ul> -->
+
+</html>
